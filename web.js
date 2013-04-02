@@ -49,7 +49,7 @@ app.get('/', function(req, res) {
                 date: article.date || (new Date()),
                 pubDate: article.pubDate || (new Date()),
                 url: article.link || '',
-                guid: article.guid || '',
+                guid: linkUrl,
                 categories: article.categories ? _.uniq(article.categories) : '',
                 'georss:point': article['georss:point'] || ''
             });
