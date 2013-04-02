@@ -8,7 +8,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1c334c57-5d1a-4fb5-ba49-2cbf3f060481" time="1364889002439" ignored="false" />
     <file path="/rss.js" changelist="1c334c57-5d1a-4fb5-ba49-2cbf3f060481" time="1364889040497" ignored="false" />
-    <file path="/web.js" changelist="1c334c57-5d1a-4fb5-ba49-2cbf3f060481" time="1364889463144" ignored="false" />
+    <file path="/web.js" changelist="1c334c57-5d1a-4fb5-ba49-2cbf3f060481" time="1364911841630" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
       <file leaf-file-name="web.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="29" selection-start="1898" selection-end="1898" vertical-scroll-proportion="0.6435331">
+            <state line="60" column="29" selection-start="2113" selection-end="2113" vertical-scroll-proportion="0.7570978">
               <folding />
             </state>
           </provider>
@@ -344,7 +344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="29" selection-start="1898" selection-end="1898" vertical-scroll-proportion="0.6435331">
+        <state line="60" column="29" selection-start="2113" selection-end="2113" vertical-scroll-proportion="0.7570978">
           <folding />
         </state>
       </provider>

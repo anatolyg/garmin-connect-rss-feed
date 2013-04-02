@@ -11,6 +11,15 @@ app.listen(port, function() {
     console.log("Listening on " + port);
 });
 
+function genGUID () {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+        return v.toString(16);
+    });
+}
+
+
+
 app.get('/', function(req, res) {
     var feed = new rss({
         title: 'Anatoly\'s Activities',
@@ -49,7 +58,7 @@ app.get('/', function(req, res) {
                 date: article.date || (new Date()),
                 pubDate: article.pubDate || (new Date()),
                 url: article.link || '',
-                guid: linkUrl,
+                guid: genGUID(),
                 categories: article.categories ? _.uniq(article.categories) : '',
                 'georss:point': article['georss:point'] || ''
             });
