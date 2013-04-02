@@ -2,7 +2,13 @@
   "name": "node-example",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.x"
+    "express": "2.5.x",
+    "restler": "~2.0.1",
+    "underscore": "~1.4.4",
+    "feedparser": "~0.14.0",
+    "request": "~2.16.6",
+    "rss": "0.0.4",
+    "feed": "~0.2.0"
   },
   "engines": {
     "node": "0.8.x",
