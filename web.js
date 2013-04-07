@@ -60,7 +60,7 @@ app.get('/garmin/embed/:user', function(req, res) {
                 date: article.date || (new Date()),
                 pubDate: article.pubDate || (new Date()),
                 url: article.link || '',
-                guid: genGUID(),
+                guid: article.guid || genGUID(),
                 categories: article.categories ? _.uniq(article.categories) : '',
                 'georss:point': article['georss:point'] || ''
             });
