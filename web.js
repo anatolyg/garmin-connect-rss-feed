@@ -18,22 +18,24 @@ function genGUID () {
     });
 }
 
-
-
-app.get('/', function(req, res) {
+app.get('/garmin/embed/:user', function(req, res) {
+    var user = req.params.user;
+    if (!user) {
+        user = "ageyfman";
+    }
     var feed = new rss({
-        title: 'Anatoly\'s Activities',
-        description: 'AnatolyG Garmin Connect Activities',
+        title: 'Garmin Connect Activities',
+        description: user + ' Garmin Connect Activities',
         feed_url: 'http://rss.geyfman.net/rss.xml',
         site_url: 'http://blog.geyfman.net',
-        author: 'Anatoly Geyfman'
+        author: user
     });
 
     var feedUrl = 'http://connect.garmin.com/feed/rss/activities';
     var r = request(feedUrl, {
             qs: {
-                feedname: 'Garmin Connect - ageyfman',
-                owner: 'ageyfman'
+                feedname: 'Garmin Connect - ' + user,
+                owner: user
             }
         }).pipe(new feedParser())
         .on('error', function(error) {
